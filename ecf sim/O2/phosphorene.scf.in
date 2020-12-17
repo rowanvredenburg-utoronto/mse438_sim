@@ -1,0 +1,54 @@
+ &control
+    disk_io = 'minimum',
+    prefix = 'phosphorene',
+    calculation ='scf',
+    outdir = './out',
+    pseudo_dir = '.'
+    tstress = .true.
+    tprnfor = .true.
+ /
+
+ &system
+    ibrav=0,
+    celldm(1)=8.621622888,
+    nat=4, 
+    ntyp=1,
+    ecutwfc=50.0, 
+    ecutrho=150.0,
+    occupations = 'smearing',
+    smearing = 'gauss',
+    degauss = 0.02,
+ /
+
+ &electrons
+    mixing_mode='plain',
+    diagonalization='david',
+    mixing_beta=0.2,
+ /
+ 
+ &ions
+ /
+ 
+ &cell
+    press = 0,
+ /
+
+ATOMIC_SPECIES
+ P 30.973762 P.pbe-n-kjpaw_psl.0.1.UPF
+
+CELL_PARAMETERS (alat)
+  1.011184213 -0.000004659 -0.001237037
+  0.000001336  0.721557876 -0.000076303
+ -0.005626851 -0.000469062  5.023078797
+
+ATOMIC_POSITIONS (crystal)
+P        0.000913480   0.482233341   0.006846463
+P        0.179480721   0.482255774   0.098723041
+P        0.501900064   0.982257550   0.098723709
+P        0.678411735   0.982232334   0.006846788
+
+K_POINTS automatic
+ 15 15 3 1 1 1
+
+
+

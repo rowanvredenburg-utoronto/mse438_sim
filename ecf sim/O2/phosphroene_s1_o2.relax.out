@@ -1,0 +1,125 @@
+
+     Program PWSCF v.6.3 starts on  9Dec2020 at 15:28:20 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Serial version
+     Waiting for input...
+     Reading input from standard input
+Warning: card  &CELL ignored
+Warning: card     PRESS = 0, ignored
+Warning: card  / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+               file P.pbe-n-kjpaw_psl.0.1.UPF: wavefunction(s)  3P renormalized
+               file O.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        1721    1721    575               158567   158567   30657
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       8.6216  a.u.
+     unit-cell volume          =    9395.0242 (a.u.)^3
+     number of atoms/cell      =           18
+     number of atomic types    =            2
+     number of electrons       =        92.00
+     number of Kohn-Sham states=           55
+     kinetic-energy cutoff     =      30.0000  Ry
+     charge density cutoff     =     100.0000  Ry
+     convergence threshold     =      1.0E-06
+     mixing beta               =       0.2000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation      = SLA PW PBX PBC ( 1  4  3  4 0 0)
+     nstep                     =           50
+
+
+     celldm(1)=   8.621623  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   2.022368  -0.000009  -0.001237 )  
+               a(2) = (   0.000003   1.443116  -0.000076 )  
+               a(3) = (  -0.011254  -0.000938   5.023079 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  0.494470 -0.000001  0.001108 )  
+               b(2) = (  0.000003  0.692945  0.000129 )  
+               b(3) = (  0.000122  0.000011  0.199081 )  
+
+
+     PseudoPot. # 1 for P  read from file:
+     ./P.pbe-n-kjpaw_psl.0.1.UPF
+     MD5 check sum: eecb1e256d89c9ed77ae4f76a10d2248
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.5.0.2 svn rev. 9415
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1147 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for O  read from file:
+     ./O.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: e99d9cef9b487d1ca56f5b95ecd0fd7a
+     Pseudo is Projector augmented-wave + core cor, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1095 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        P              5.00    30.97376     P ( 1.00)
+        O              6.00    15.99900     O ( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           P   tau(   1) = (   0.0008473   0.3479528   0.0343714  )
+         2           P   tau(   2) = (   0.1803777   0.3478820   0.4957642  )
+         3           P   tau(   3) = (   0.5064037   0.7086607   0.4955491  )
+         4           P   tau(   4) = (   0.6859235   0.7087279   0.0339349  )
+         5           P   tau(   5) = (   1.0120328   1.0695061   0.0337147  )
+         6           P   tau(   6) = (   1.1915633   1.0694352   0.4951075  )
+         7           P   tau(   7) = (   1.5175893   1.4302139   0.4948924  )
+         8           P   tau(   8) = (   1.6971090   1.4302811   0.0332782  )
+         9           P   tau(   9) = (   0.0008486   1.0695107   0.0343332  )
+        10           P   tau(  10) = (   0.1803791   1.0694399   0.4957261  )
+        11           P   tau(  11) = (   0.5064051   1.4302186   0.4955109  )
+        12           P   tau(  12) = (   0.6859248   1.4302858   0.0338967  )
+        13           P   tau(  13) = (   1.0120315   0.3479482   0.0337528  )
+        14           P   tau(  14) = (   1.1915619   0.3478773   0.4951457  )
+        15           P   tau(  15) = (   1.5175879   0.7086561   0.4949305  )
+        16           P   tau(  16) = (   1.6971077   0.7087232   0.0333164  )
+        17           O   tau(  17) = (   1.0104819   1.0693768   0.7259747  )
+        18           O   tau(  18) = (   1.6955568   0.7086121   0.7255747  )
+
+     number of k points=   600  gaussian smearing, width (Ry)=  0.0200
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   158567 G-vectors     FFT dimensions: (  60,  40, 144)
